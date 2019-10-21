@@ -1,4 +1,4 @@
-var state_array = new Array("Andaman & Nicobar", "Delhi", "Goa",  "Kerala",  "Tamil Nadu", );
+var state_array = new Array("Andaman & Nicobar", "Delhi", "Goa",  "Kerala",  "Tamil Nadu");
 
 var city_array = new Array();
 city_array[0]="";
