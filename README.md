@@ -1,7 +1,6 @@
 # State-and-cities-display-using-JAVASCRIPT
 
 #Select State then city will be enabled
-<body>
     <p id="Country_State">
     <p id="Country_City">
 
@@ -11,6 +10,9 @@
 
         <button type="button" onclick="To_Conform_Location()">To Conform Location</button>
     </form>
+
+
+
 
 #Function to display state and city
     <script language="javascript">
@@ -26,7 +28,6 @@
             document.getElementById("Country_City").innerHTML = "City : " + display_city;
         }
     </script>
-</body>
 
 
 
