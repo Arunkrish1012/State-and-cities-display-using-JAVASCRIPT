@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Test case</title>
+    <script src="state&cities.js"></script>
+</head>
+<body>
+
+    <p id="Country_State">State : Select State</p>
+    <p id="Country_City">City : Select City</p>
+
+    <form>
+        <select onchange="city('state', this.selectedIndex);" id="status" name ="start" class="form-control" required></select>
+        <select id ="state" class="form-control" required></select><br><br>
+
+        <button type="button" onclick="To_Conform_Location()">To Conform Location</button>
+    </form>
+
+    <script language="javascript">
+        state("status");
+        function To_Conform_Location()
+        {
+            var C_STATE = document.getElementById("status");
+            var display_state = C_STATE.options[C_STATE.selectedIndex].text;
+            document.getElementById("Country_State").innerHTML = "State : " + display_state;
+
+            var C_STATE = document.getElementById("state");
+            var display_city = C_STATE.options[C_STATE.selectedIndex].text;
+            document.getElementById("Country_City").innerHTML = "City : " + display_city;
+        }
+    </script>
+</body>
+</html>
